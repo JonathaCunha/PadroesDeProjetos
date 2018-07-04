@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Criacao", "Criacao\Criacao.csproj", "{85A49A3D-4D2B-43A2-84D2-A0BF13269C58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estrutural", "Estrutural\Estrutural.csproj", "{778D7A07-C849-4783-9243-F581FC97DACD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comportamental", "Comportamental\Comportamental.csproj", "{43411010-DEB1-4F29-93EB-828C892379E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85A49A3D-4D2B-43A2-84D2-A0BF13269C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85A49A3D-4D2B-43A2-84D2-A0BF13269C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85A49A3D-4D2B-43A2-84D2-A0BF13269C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85A49A3D-4D2B-43A2-84D2-A0BF13269C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{778D7A07-C849-4783-9243-F581FC97DACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{778D7A07-C849-4783-9243-F581FC97DACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{778D7A07-C849-4783-9243-F581FC97DACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{778D7A07-C849-4783-9243-F581FC97DACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43411010-DEB1-4F29-93EB-828C892379E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43411010-DEB1-4F29-93EB-828C892379E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43411010-DEB1-4F29-93EB-828C892379E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43411010-DEB1-4F29-93EB-828C892379E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDC7427D-2D6B-4F50-9F66-DFA1D8AC211F}
+	EndGlobalSection
+EndGlobal
