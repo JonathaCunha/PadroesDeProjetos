@@ -18,8 +18,4 @@
     <Compile Remove="Factory Method\ModeloCarro\ProdutoConcretoGolf.cs" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Abstract Factory\" />
-  </ItemGroup>
-
 </Project>

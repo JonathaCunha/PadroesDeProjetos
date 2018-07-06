@@ -6,7 +6,7 @@ namespace Criacao.Factory_Method
 {
     public class ClientMain
     {
-        public static void Main(string[] args)
+       public/* static*/ void Main(string[] args)
         {
             var fabricaFiat = new FabricaCarroFiat();
             for (int i = 0; i < 6; i++)
