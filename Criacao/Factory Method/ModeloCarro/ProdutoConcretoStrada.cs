@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Criacao.Factocty_Method
+namespace Criacao.Factory_Method
 {
     class ProdutoConcretoStrada : ProdutoCarro
     {

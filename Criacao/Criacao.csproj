@@ -3,19 +3,23 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <StartupObject>Criacao.Factocty_Method.ClientMain</StartupObject>
+    <StartupObject></StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Factocty Method\NovaPasta\**" />
-    <EmbeddedResource Remove="Factocty Method\NovaPasta\**" />
-    <None Remove="Factocty Method\NovaPasta\**" />
+    <Compile Remove="Factory Method\NovaPasta\**" />
+    <EmbeddedResource Remove="Factory Method\NovaPasta\**" />
+    <None Remove="Factory Method\NovaPasta\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Factocty Method\FabricaConcretaVolkswagen.cs" />
-    <Compile Remove="Factocty Method\ModeloCarro\ProdutoConcretoGol.cs" />
-    <Compile Remove="Factocty Method\ModeloCarro\ProdutoConcretoGolf.cs" />
+    <Compile Remove="Factory Method\FabricaConcretaVolkswagen.cs" />
+    <Compile Remove="Factory Method\ModeloCarro\ProdutoConcretoGol.cs" />
+    <Compile Remove="Factory Method\ModeloCarro\ProdutoConcretoGolf.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstract Factory\" />
   </ItemGroup>
 
 </Project>

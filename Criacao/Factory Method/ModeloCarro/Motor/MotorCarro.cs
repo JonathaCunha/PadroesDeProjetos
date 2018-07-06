@@ -1,4 +1,4 @@
-﻿namespace Criacao.Factocty_Method
+﻿namespace Criacao.Factory_Method
 {
     public abstract class MotorCarro
     {
