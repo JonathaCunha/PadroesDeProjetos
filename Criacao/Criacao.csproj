@@ -18,4 +18,8 @@
     <Compile Remove="Factory Method\ModeloCarro\ProdutoConcretoGolf.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Builder\Interface Fluent\" />
+  </ItemGroup>
+
 </Project>

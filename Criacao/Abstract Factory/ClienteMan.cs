@@ -6,7 +6,7 @@ namespace Criacao.Abstract_Factory
 {
     public class ClienteMan
     {
-        public static void Main(string[] args)
+        public /*static*/ void Main(string[] args)
         {
             var cliente = new Cliente(new FabricaWindows());
             cliente.Desenhe();
