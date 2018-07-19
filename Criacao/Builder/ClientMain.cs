@@ -28,20 +28,19 @@ namespace Criacao.Builder
             Console.Read();
         }
 
-        private static void CriarGuerreiro(BuilderGuerreiroFluent perfilMedievalFluent)
+        private static void CriarGuerreiro(BuilderGuerreiroFluent perfil)
         {
             var distribuidoDeArmasFluent = new DirectorGuerreiroFluent();
-            distribuidoDeArmasFluent.CarregarItensBasico(perfilMedievalFluent);
-            perfilMedievalFluent.ObtenhaGuerreiro();
+            distribuidoDeArmasFluent.CarregarItensBasico(perfil);
+            perfil.ObtenhaGuerreiro();
 
-            distribuidoDeArmasFluent.CarregarItensProtecaoContraAtaque(perfilMedievalFluent);
-            perfilMedievalFluent.ObtenhaGuerreiro();
+            distribuidoDeArmasFluent.CarregarItensProtecaoContraAtaque(perfil);
+            perfil.ObtenhaGuerreiro();
         }
 
         public static void CriarGuerreiro(BuilderGuerreiro perfil)
         {
             var distribuidoDeArmas = new DirectorGuerreiro();
-
             distribuidoDeArmas.CarregarItensBasico(perfil);
             perfil.ObtenhaGuerreiro();
 
