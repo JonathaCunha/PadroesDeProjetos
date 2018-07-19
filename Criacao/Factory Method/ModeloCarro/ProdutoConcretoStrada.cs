@@ -10,7 +10,6 @@ namespace Criacao.Factory_Method
         {
             Nome = "Strada";
             tamanhoAroRoda = 14;
-            Motor = FabricaMotorCarro.CrieMotoModelo("Work");
         }
     }
 }

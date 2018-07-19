@@ -8,8 +8,6 @@ namespace Criacao.Factory_Method
     {
         public string Nome { get; protected set; }
         public int tamanhoAroRoda { get; set; }
-        public MotorCarro Motor { get; set; }
-        public string NomeMotorEPotencia => $"{Motor.Nome} {Motor.Potencia}";
 
     }
 }

@@ -16,11 +16,7 @@ namespace Criacao.Factory_Method
             if(carroPotente == 0)
                 return new ProdutoConcretoPalio();
 
-            var carro = new ProdutoConcretoStrada();
-            if (--carroPotente == 0)
-                carro.Motor = FabricaMotorCarro.CrieMotoModelo("Fire");
-            return carro;
-
+            return new ProdutoConcretoStrada();
         }
         
     }
