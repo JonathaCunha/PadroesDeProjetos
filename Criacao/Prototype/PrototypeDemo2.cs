@@ -4,17 +4,17 @@ using System.Text;
 
 namespace Criacao.Prototype
 {
-    public class PrototypeClass : ICloneable
+    public class PrototypeDemo2
     {
-        public int Nome { get; set; }
+        public string Nome { get; set; }
         public decimal Valor { get; set; }
         public int Quantidade { get; set; }
 
         public object Clone()
         {
-            return new PrototypeClass()
+            return new PrototypeDemo2()
             {
-                Valor = this.Valor,
+                Nome = this.Nome,
                 Quantidade = this.Quantidade,
             };
         }

@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
+/// <summary>
+/// Definir uma interface para criar um objeto, mas deixar as subclasses decidirem que classe instanciar.
+/// O Factory Method permite adiar a instanciação para subclasses.
+/// </summary>
 namespace Criacao.Factory_Method
 {
     public class FabricaCarroFiat : FabricaAbstract
@@ -9,14 +13,14 @@ namespace Criacao.Factory_Method
         int carroPotente = 4;
         protected override ProdutoCarro CrieNovoCarro()
         {
-            if (carroPotente-- > 0)
-            {
-                var carro = new ProdutoConcretoStrada();
-                if (carroPotente == 0)
-                    carro.Motor = FabricaMotorCarro.CrieMotoModelo("Fire");
-                return carro;
-            }
-            return new ProdutoConcretoPalio();
+            if(carroPotente == 0)
+                return new ProdutoConcretoPalio();
+
+            var carro = new ProdutoConcretoStrada();
+            if (--carroPotente == 0)
+                carro.Motor = FabricaMotorCarro.CrieMotoModelo("Fire");
+            return carro;
+
         }
         
     }
