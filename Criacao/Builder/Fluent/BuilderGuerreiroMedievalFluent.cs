@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Criacao.Builder
 {
-    public class ConcreteBuilderMedievalFluent : BuilderGuerreiroFluent
+    public class BuilderGuerreiroMedievalFluent : BuilderGuerreiroFluent
     {
-        public ConcreteBuilderMedievalFluent()
+        public BuilderGuerreiroMedievalFluent()
         {
             Guerreiro.Tipo = "Medieval";
         }

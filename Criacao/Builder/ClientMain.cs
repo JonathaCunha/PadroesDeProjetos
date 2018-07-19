@@ -2,29 +2,40 @@
 using System.Collections.Generic;
 using System.Text;
 
+
+/// <summary>
+/// Separar a construção de um objeto complexo de sua representação
+/// de modo que o mesmo processo de construção possa criar diferentes representações.
+/// </summary>
 namespace Criacao.Builder
 {
     public class ClientMain
     {
         public static void Main(string[] args)
         {
-            CriarGuerreiro(new ConcreteBuilderMedieval());
-            CriarGuerreiro(new ConcreteBuilderDoFuturo());
+            Console.WriteLine("Sem Fluent");
+            CriarGuerreiro(new BuilderGuerreiroMedieval());
+            CriarGuerreiro(new BuilderGuerreiroFuturo());
 
             Console.WriteLine("Usando Fluent");
-            var perfilMedievalFluent = new ConcreteBuilderMedievalFluent();
+            CriarGuerreiro(new BuilderGuerreiroFuturoFluent());
+            var guerreiroMedieval = new BuilderGuerreiroMedievalFluent();
+            CriarGuerreiro(guerreiroMedieval);
 
+            guerreiroMedieval.AdicionarEscudoMagico();
+            guerreiroMedieval.ObtenhaGuerreiro();
+
+            Console.Read();
+        }
+
+        private static void CriarGuerreiro(BuilderGuerreiroFluent perfilMedievalFluent)
+        {
             var distribuidoDeArmasFluent = new DirectorGuerreiroFluent();
             distribuidoDeArmasFluent.CarregarItensBasico(perfilMedievalFluent);
             perfilMedievalFluent.ObtenhaGuerreiro();
 
-            perfilMedievalFluent.AdicionarEscudoMagico();
-            perfilMedievalFluent.ObtenhaGuerreiro();
-
             distribuidoDeArmasFluent.CarregarItensProtecaoContraAtaque(perfilMedievalFluent);
             perfilMedievalFluent.ObtenhaGuerreiro();
-
-            Console.Read();
         }
 
         public static void CriarGuerreiro(BuilderGuerreiro perfil)

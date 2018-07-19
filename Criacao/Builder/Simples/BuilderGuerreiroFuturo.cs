@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Criacao.Builder
 {
-    public class ConcreteBuilderDoFuturo : BuilderGuerreiro
+    public class BuilderGuerreiroFuturo : BuilderGuerreiro
     {
-        public ConcreteBuilderDoFuturo()
+        public BuilderGuerreiroFuturo()
         {
             Guerreiro.Tipo = "Futuro";
         }
