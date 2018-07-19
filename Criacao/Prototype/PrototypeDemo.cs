@@ -12,13 +12,14 @@ namespace Criacao.Prototype
         public int Nome { get; set; }
         public decimal Valor { get; set; }
         public int Quantidade { get; set; }
-        public PrototypeDemo2 ParteObjetoClona { get; set; }
-        public PrototypeDemo2 ParteObjetoManterRef { get; set; }
+        public PrototypeSimples ParteObjetoClona { get; set; }
+        public PrototypeSimples ParteObjetoManterRef { get; set; }
 
         public object Clone()
         {
             var clone = (PrototypeDemo)this.MemberwiseClone();
-            clone.ParteObjetoClona = (PrototypeDemo2)this.ParteObjetoClona.Clone();
+
+            clone.ParteObjetoClona = (PrototypeSimples)this.ParteObjetoClona.Clone();
             clone.ParteObjetoManterRef = this.ParteObjetoManterRef;
 
             return clone;

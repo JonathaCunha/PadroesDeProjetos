@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Criacao.Prototype
 {
-    public class PrototypeDemo2
+    public class PrototypeSimples
     {
         public string Nome { get; set; }
         public decimal Valor { get; set; }
@@ -12,7 +12,7 @@ namespace Criacao.Prototype
 
         public object Clone()
         {
-            return new PrototypeDemo2()
+            return new PrototypeSimples()
             {
                 Nome = this.Nome,
                 Quantidade = this.Quantidade,

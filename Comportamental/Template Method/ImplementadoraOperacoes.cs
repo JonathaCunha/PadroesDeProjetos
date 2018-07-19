@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Comportamental.Template_Method
 {
-    class ConcreteClass : AbstractTemplate
+    class ImplementadoraOperacoes : Template
     {
         protected override void opercacao1()
         {

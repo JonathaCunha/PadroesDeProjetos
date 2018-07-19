@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
+/// <summary>
+/// Separar a construção de um objeto complexo de sua representação
+///de modo que o mesmo processo de construção possa criar diferentes representações.
+/// </summary>
 namespace Criacao.Builder
 {
    public abstract class BuilderGuerreiroFluent
