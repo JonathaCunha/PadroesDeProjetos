@@ -13,13 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Builder\GuerreiroDoFuturo.cs" />
+    <Compile Remove="Builder\GuerreiroMedieval.cs" />
     <Compile Remove="Factory Method\FabricaConcretaVolkswagen.cs" />
     <Compile Remove="Factory Method\ModeloCarro\ProdutoConcretoGol.cs" />
     <Compile Remove="Factory Method\ModeloCarro\ProdutoConcretoGolf.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Builder\Interface Fluent\" />
   </ItemGroup>
 
 </Project>

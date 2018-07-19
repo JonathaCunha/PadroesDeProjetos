@@ -4,30 +4,25 @@ using System.Text;
 
 namespace Criacao.Builder
 {
-    public class ConcreteBuilderMedieval : BuilderGuerreiroAbstract
+    public class ConcreteBuilderMedieval : BuilderGuerreiro
     {
-        public ConcreteBuilderMedieval() : base(new GuerreiroMedieval())
+        public ConcreteBuilderMedieval()
         {
+            Guerreiro.Tipo = "Medieval";
+        }
+        public override void AdicionarEscudo()
+        {
+            Guerreiro.AdicionarEscudo("Escudo Medieval");
         }
 
-        public override void SubirFocaEspada()
+        public override void AdicionarEspada()
         {
-            guerreiro.AdicionarPontosForcaEspada(1);
+            Guerreiro.AdicionarEspada("Espada Medieval");
         }
 
-        public override void SubirForcaArmadura()
+        public override void AdicionarFlecha()
         {
-            guerreiro.AdicionarPontosForcaArmadura(3);
-        }
-
-        public override void SubirForcaEscudo()
-        {
-            guerreiro.AdicionarPontosForcaEscudo(4);
-        }
-
-        public override void SubirNivel()
-        {
-            guerreiro.SubiNivel();
+            Guerreiro.AdicionarFlecha("Flecha Medieval");
         }
     }
 }

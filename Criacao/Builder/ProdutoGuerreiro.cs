@@ -4,37 +4,34 @@ using System.Text;
 
 namespace Criacao.Builder
 {
-    public abstract class ProdutoGuerreiro
+    public class ProdutoGuerreiro
     {
-        public ProdutoGuerreiro(int forcaEspada, int forcaArmadura, int forcaEscudo)
+        public ProdutoGuerreiro()
         {
-            this.ForcaArmadura = forcaArmadura;
-            this.ForcaEspada = forcaEspada;
-            this.ForcaEscudo = forcaEscudo;
-        }
-        public int ForcaEspada { get; private set; }
-        public int ForcaEscudo { get; private set; }
-        public int ForcaArmadura { get; private set; }
-        public int Nivel { get; private set; }
-
-        public void SubiNivel()
-        {
-            Nivel++;
+            Espada = "Sem Espada";
+            Escudo = "Sem Escudo";
+            Flecha = "Sem Flecha";
         }
 
-        public void AdicionarPontosForcaEspada(int quantidade)
+        public string Tipo { get; set; }
+        public string Espada { get; protected set; }
+        public string Escudo { get; protected set; }
+        public string Flecha { get; protected set; }
+
+        public void AdicionarEspada(string espada)
         {
-            ForcaEspada =+ (quantidade * Nivel);
+            Espada = espada;
         }
 
-        public void AdicionarPontosForcaArmadura(int quantidade)
+        public void AdicionarEscudo(string escudo)
         {
-            ForcaArmadura = +(quantidade * Nivel);
+            Escudo = escudo;
         }
 
-        public void AdicionarPontosForcaEscudo(int quantidade)
+        public void AdicionarFlecha(string flecha)
         {
-            ForcaEscudo = +(quantidade * Nivel);
+            Flecha = flecha;
         }
+
     }
 }

@@ -8,28 +8,34 @@ namespace Criacao.Builder
     {
         public static void Main(string[] args)
         {
-            var guerreiroMedieval = new ConcreteBuilderMedieval();
-            var guerreiroFuturo = new ConcreteBuilderDoFuturo();
+            CriarGuerreiro(new ConcreteBuilderMedieval());
+            CriarGuerreiro(new ConcreteBuilderDoFuturo());
 
-            var fase = new DirectorFortalecerGuerreiroFluent();
-            fase.ComeMaca(guerreiroMedieval);
-            fase.ComeBanana(guerreiroMedieval);
+            Console.WriteLine("Usando Fluent");
+            var perfilMedievalFluent = new ConcreteBuilderMedievalFluent();
 
-            fase.ComeMaca(guerreiroFuturo);
-            fase.ComeBanana(guerreiroFuturo);
+            var distribuidoDeArmasFluent = new DirectorGuerreiroFluent();
+            distribuidoDeArmasFluent.CarregarItensBasico(perfilMedievalFluent);
+            perfilMedievalFluent.ObtenhaGuerreiro();
 
-            guerreiroMedieval.Pontuacao();
-            guerreiroFuturo.Pontuacao();
+            perfilMedievalFluent.AdicionarEscudoMagico();
+            perfilMedievalFluent.ObtenhaGuerreiro();
 
-            fase.ComeMaca(guerreiroFuturo);
-            fase.ComeBanana(guerreiroFuturo);
-            fase.ComeMaca(guerreiroMedieval);
-            fase.ComeBanana(guerreiroMedieval);
-
-            guerreiroMedieval.Pontuacao();
-            guerreiroFuturo.Pontuacao();
+            distribuidoDeArmasFluent.CarregarItensProtecaoContraAtaque(perfilMedievalFluent);
+            perfilMedievalFluent.ObtenhaGuerreiro();
 
             Console.Read();
+        }
+
+        public static void CriarGuerreiro(BuilderGuerreiro perfil)
+        {
+            var distribuidoDeArmas = new DirectorGuerreiro();
+
+            distribuidoDeArmas.CarregarItensBasico(perfil);
+            perfil.ObtenhaGuerreiro();
+
+            distribuidoDeArmas.CarregarItensProtecaoContraAtaque(perfil);
+            perfil.ObtenhaGuerreiro();
         }
     }
 }

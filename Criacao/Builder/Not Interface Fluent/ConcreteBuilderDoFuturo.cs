@@ -4,30 +4,26 @@ using System.Text;
 
 namespace Criacao.Builder
 {
-    public class ConcreteBuilderDoFuturo : BuilderGuerreiroAbstract
+    public class ConcreteBuilderDoFuturo : BuilderGuerreiro
     {
-        public ConcreteBuilderDoFuturo() : base(new GuerreiroDoFuturo())
+        public ConcreteBuilderDoFuturo()
         {
+            Guerreiro.Tipo = "Futuro";
         }
 
-        public override void SubirFocaEspada()
+        public override void AdicionarEscudo()
         {
-            guerreiro.AdicionarPontosForcaEspada(2);
+            Guerreiro.AdicionarEscudo("Escudo do Futuro");
         }
 
-        public override void SubirForcaArmadura()
+        public override void AdicionarEspada()
         {
-            guerreiro.AdicionarPontosForcaArmadura(4);
+            Guerreiro.AdicionarEspada("Espada do Futuro");
         }
 
-        public override void SubirForcaEscudo()
+        public override void AdicionarFlecha()
         {
-            guerreiro.AdicionarPontosForcaEscudo(3);
-        }
-
-        public override void SubirNivel()
-        {
-            guerreiro.SubiNivel();
+            Guerreiro.AdicionarFlecha("Flecha");
         }
     }
 }
