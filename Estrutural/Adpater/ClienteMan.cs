@@ -11,7 +11,7 @@ namespace Estrutural.Adpater
 {
     class ClienteMan
     {
-        public static void Main(string[] args)
+        public /*static*/ void Main(string[] args)
         {
             var listaOperadoras = new IEnvioSMS[] 
             {
