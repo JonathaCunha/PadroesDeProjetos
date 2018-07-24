@@ -12,7 +12,7 @@ namespace Estrutural.Decorator
             Console.WriteLine(DateTime.Now.ToString("dd/MM/yyyy"));
             foreach (var item in nomes)
             {
-                Console.Write(" - "item.ToUpper());
+                Console.Write(" - " + item.ToUpper());
             }
             return nomes;
         }
