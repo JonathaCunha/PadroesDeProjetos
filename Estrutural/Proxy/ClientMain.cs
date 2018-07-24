@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 /// <summary>
-/// Dinamicamente(em tempo de execução), agregar responsabilidades adicionais a objetos.
-/// Os Decorators fornecem uma alternativa flexível ao uso de subclasses para extensão de funcionalidades.
+/// Fornecer um substituto ou marcador da localização de outro objeto para controlar o acesso a esse objeto
 /// </summary>
 namespace Estrutural.Proxy
 {
