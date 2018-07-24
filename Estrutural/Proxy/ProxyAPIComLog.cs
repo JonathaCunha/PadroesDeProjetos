@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Estrutural.Decorator
+namespace Estrutural.Proxy
 {
-    class DecotatorAPIComLog : APIAplicacao
+    class ProxyAPIComLog : APIAplicacao
     {
         public override IEnumerable<string> ObtenhaNomesDeClientes()
         {
