@@ -10,7 +10,7 @@ namespace Estrutural.Decorator
 {
     class ClientMain
     {
-        public static void Main(string[] args)
+        public /*static*/ void Main(string[] args)
         {
             Bebida bebida = new CafeExpresso();
             bebida = new Leite(bebida);
