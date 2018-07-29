@@ -6,8 +6,8 @@ namespace Estrutural.Bridge
 {
     public abstract class JanelaAbstrata
     {
-        protected JanelaImpletacao Impletacao;
-        public JanelaAbstrata(JanelaImpletacao impletacao)
+        protected IJanelaImpletacao Impletacao;
+        public JanelaAbstrata(IJanelaImpletacao impletacao)
         {
             Impletacao = impletacao;
         }

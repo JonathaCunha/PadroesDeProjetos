@@ -6,7 +6,7 @@ namespace Estrutural.Bridge
 {
     public class JanelaAviso : JanelaAbstrata
     {
-        public JanelaAviso(JanelaImpletacao impletacao)
+        public JanelaAviso(IJanelaImpletacao impletacao)
             : base(impletacao)
         {
         }

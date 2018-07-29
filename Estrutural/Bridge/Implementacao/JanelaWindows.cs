@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Estrutural.Bridge
 {
-    class JanelaWindows : JanelaImpletacao
+    class JanelaWindows : IJanelaImpletacao
     {
         public void DesenheBotao(string titulo)
         {

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Estrutural.Bridge
 {
-    public interface JanelaImpletacao
+    public interface IJanelaImpletacao
     {
         void DesenheJanela(string titulo);
         void DesenheBotao(string titulo);
