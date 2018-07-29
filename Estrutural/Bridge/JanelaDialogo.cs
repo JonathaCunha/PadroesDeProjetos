@@ -4,7 +4,18 @@ using System.Text;
 
 namespace Estrutural.Bridge
 {
-    class JanelaDialogo
+    public class JanelaDialogo : JanelaAbstrata
     {
+        public JanelaDialogo(JanelaImpletacao impletacao) : base(impletacao)
+        {
+        }
+
+        public override void Desenhe()
+        {
+            DesenheJanela("Janela de Diálogo");
+            DesenheBotao("Botão Sim");
+            DesenheBotao("Botão Não");
+            DesenheBotao("Botão Cancelar");
+        }
     }
 }
