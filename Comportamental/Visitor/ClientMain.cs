@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
+/// <summary>
+/// Representar uma operação a ser executada nos elementos de uma estrutura de objetos.
+/// Visitor permite definir uma nova operação sem mudar as classes dos elementos sobre os quais opera.
+/// </summary>
 namespace Comportamental.Visitor
 {
     public class ClientMain
