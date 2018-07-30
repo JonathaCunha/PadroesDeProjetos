@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
+
+/// <summary>
+/// Definir o esqueleto de um algoritmo em uma operação, postergando alguns passos para as subclasses. 
+/// Template Method permite que subclasses redefinam certos passo de um algoritmo sem mudar a estrutura do mesmo
+/// </summary>
 namespace Comportamental.Template_Method
 {
     class ImplementadoraOperacoes : Template
