@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
+
+/// <summary>
+/// Compor objetos em estruturas de árvore para representar hierarquia partes-todo.
+/// Composite permite aos clientes tratarem de maneira uniforme objetos individuais e composições de objetos
+/// </summary>
 namespace Estrutural.Composite
 {
     class ClientMain

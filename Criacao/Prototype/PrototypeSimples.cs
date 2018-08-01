@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Criacao.Prototype
 {
-    public class PrototypeSimples
+    public class PrototypeSimples : ICloneable
     {
         public string Nome { get; set; }
         public decimal Valor { get; set; }

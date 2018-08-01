@@ -11,7 +11,7 @@ namespace Comportamental.Visitor
 {
     public class ClientMain
     {
-        public static void Main(string[] args)
+        public /*static*/ void Main(string[] args)
         {
             var minhaLista = new MinhaLista();
             Console.WriteLine(string.Join(",", minhaLista.ListaNumerica));

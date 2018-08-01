@@ -10,7 +10,7 @@ namespace Criacao.Sigleton
 {
     class SigletonFactory
     {
-        public SigletonFactory sigletonFactory { get; set; }
+        protected SigletonFactory sigletonFactory { get; set; }
         private SigletonFactory()
         {
         }
