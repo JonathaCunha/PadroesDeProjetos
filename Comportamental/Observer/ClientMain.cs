@@ -11,7 +11,7 @@ namespace Comportamental.Observer
 {
     public class ClientMain
     {
-        public static void Main(string[] args)
+        public /*static*/ void Main(string[] args)
         {
             var observada = new Observada();
             observada.AdicioneObservador(new Observador1(observada));
