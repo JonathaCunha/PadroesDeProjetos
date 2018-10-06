@@ -4,7 +4,8 @@ using System.Text;
 
 
 /// <summary>
-/// Desacoplar uma abstração da sua implementação, de modo que as duas possam variar independentemente.
+/// Desacoplar uma abstração da sua implementação, 
+/// de modo que as duas possam variar independentemente.
 /// </summary>
 namespace Estrutural.Bridge
 {
@@ -12,12 +13,12 @@ namespace Estrutural.Bridge
     {
         public /*static*/ void Main(string[] args)
         {
-            JanelaAbstrata janela = new JanelaDialogo(new JanelaLinux());
+            JanelaAbstrata janela = new JanelaDialogo(new SOLinux());
             janela.Desenhe();
-            janela = new JanelaDialogo(new JanelaWindows());
+            janela = new JanelaDialogo(new SOWindows());
             janela.Desenhe();
 
-            janela = new JanelaAviso(new JanelaLinux());
+            janela = new JanelaAviso(new SOLinux());
             janela.Desenhe();
 
            

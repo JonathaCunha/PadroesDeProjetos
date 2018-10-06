@@ -22,8 +22,9 @@ namespace Criacao.Builder
             var guerreiroMedieval = new BuilderGuerreiroMedievalFluent();
             CriarGuerreiro(guerreiroMedieval);
 
-            guerreiroMedieval.AdicionarEscudoMagico();
-            guerreiroMedieval.ObtenhaGuerreiro();
+            guerreiroMedieval
+                .AdicionarEscudoMagico()
+                .ObtenhaGuerreiro();
 
             Console.Read();
         }
@@ -31,6 +32,7 @@ namespace Criacao.Builder
         private static void CriarGuerreiro(BuilderGuerreiroFluent perfil)
         {
             var distribuidoDeArmasFluent = new DirectorGuerreiroFluent();
+
             distribuidoDeArmasFluent.CarregarItensBasico(perfil);
             perfil.ObtenhaGuerreiro();
 
@@ -41,6 +43,7 @@ namespace Criacao.Builder
         public static void CriarGuerreiro(BuilderGuerreiro perfil)
         {
             var distribuidoDeArmas = new DirectorGuerreiro();
+
             distribuidoDeArmas.CarregarItensBasico(perfil);
             perfil.ObtenhaGuerreiro();
 

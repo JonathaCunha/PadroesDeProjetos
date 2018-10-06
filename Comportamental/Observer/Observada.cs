@@ -22,7 +22,6 @@ namespace Comportamental.Observer
             Observadores = new List<ObservadorAbstrato>();
         }
 
-
         public void AdicioneObservador(ObservadorAbstrato observador)
         {
             Observadores.Add(observador);

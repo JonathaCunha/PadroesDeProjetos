@@ -4,16 +4,16 @@ using System.Text;
 
 namespace Estrutural.Bridge
 {
-    public class JanelaLinux : IJanelaImpletacao
+    class SOWindows : IJanelaImpletacao
     {
         public void DesenheBotao(string titulo)
         {
-            Console.WriteLine($"Janela Windows - {titulo} ");
+            Console.WriteLine($"Janela Linux - {titulo} ");
         }
 
         public void DesenheJanela(string titulo)
         {
-            Console.WriteLine($"Botão Windows - {titulo} ");
+            Console.WriteLine($"Botão Linux - {titulo} ");
         }
     }
 }
