@@ -13,7 +13,7 @@ namespace Comportamental.Command
         /// enfileirar ou fazer o registro de solicitações e suportar operações que podem ser desfeitas.
         /// </summary>
         /// <param name="agrs"></param>
-        public static void Main(string[] agrs)
+        public /*static*/ void Main(string[] agrs)
         {
             var caixaMsgAna = new CaixaDeMensagem("Ana");
             var caixaMsgJose = new CaixaDeMensagem("Jose");
