@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
+//https://medium.com/@sawomirkowalski/design-patterns-object-pool-e8269fd45e10
 namespace Outros.Object_Pool
 {
+    /// <summary>
+    /// reuse and share objects that are expensive to create.
+    /// </summary>
     class ClientMain
     {
         public /*static*/ void Main(string[] args)
