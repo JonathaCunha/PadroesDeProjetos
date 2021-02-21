@@ -16,7 +16,7 @@ namespace Criacao.Factory_Method
             for (int i = 0; i < 6; i++)
             {
                 var carro = fabricaFiat.NovoCarro();
-                fabricaFiat.ColocaRodaAro(13 + i);
+                fabricaFiat.ColocaRodaAro(15 + i);
                 Console.WriteLine($"{carro.Nome} roda {carro.tamanhoAroRoda}");
             }
 

@@ -10,7 +10,7 @@ namespace Outros.Interpreter
         /// Rever Exemplo, para ver estar certo
         /// </summary>
         /// <param name="agrs"></param>
-        public /*static*/ void Main(string[] agrs)
+        public static void Main(string[] agrs)
         {
             var tradutor = new Tradutor();
             tradutor.AdicioneIntepretador(new InterpretadorIngles());

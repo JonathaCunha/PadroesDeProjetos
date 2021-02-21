@@ -6,7 +6,8 @@ using System.Linq;
 
 namespace Outros.Object_Pool
 {
-    public class ObjectPool<T> where T : Livro, new()
+    public class ObjectPool<T> 
+        where T : Livro, new()
     {
         private readonly ConcurrentBag<T> items = new ConcurrentBag<T>();
         private int MAX = 10;

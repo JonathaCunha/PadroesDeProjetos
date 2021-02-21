@@ -24,14 +24,14 @@ namespace Outros.Simples_Factory
 
 
         //SEM FABRICA
-        //public static void Main(string[] agrs)
+        //public /*static*/ void Main(string[] agrs)
         //{
         //    Console.WriteLine(SimplesFactory("B").Nome);
         //    Console.WriteLine(SimplesFactory("K").Nome);
         //    Console.ReadKey();
         //}
 
-        //public static Car SimplesFactory(string tipo)
+        //public /*static*/ Car SimplesFactory(string tipo)
         //{
         //    switch (tipo)
         //    {

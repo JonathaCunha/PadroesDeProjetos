@@ -29,7 +29,7 @@ namespace Outros.Interpreter
                 foreach (var palavra in Palavras)
                 {
                     var traducao = intepretador.Iterprete(palavra);
-                    Console.WriteLine(traducao);
+                    Console.WriteLine($"{palavra}:{traducao}");
                 }
             }
 

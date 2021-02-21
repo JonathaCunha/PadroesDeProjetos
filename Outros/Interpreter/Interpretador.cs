@@ -21,7 +21,7 @@ namespace Outros.Interpreter
         {
             var traducao = traducoes
                 .FirstOrDefault(m => m.Key.Equals(palavra, StringComparison.OrdinalIgnoreCase));
-            return string.IsNullOrWhiteSpace(traducao.Value) ? "#" : traducao.Value;
+            return string.IsNullOrWhiteSpace(traducao.Value) ? "" : traducao.Value;
 
         }
     }
