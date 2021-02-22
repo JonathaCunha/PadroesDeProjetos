@@ -17,14 +17,13 @@ namespace Comportamental.Memento
 
         public void Escreve(string texto)
         {
-            careTake.AdicionarMomento(new TextoMemento(textoAtual));
+            careTake.AdicionarMomento(textoAtual);
             textoAtual += texto;
         }
 
         public void Desfazer()
         {
-            var momento = careTake.ObtenhaUltimoEstado();
-            textoAtual = momento.ObtenhaMomento();
+            textoAtual = careTake.ObtenhaUltimoEstado();
         }
 
         public string ObtenhaTexto()

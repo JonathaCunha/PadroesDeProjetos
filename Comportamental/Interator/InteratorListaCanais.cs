@@ -4,7 +4,7 @@ namespace Comportamental.Interator
 {
     internal class InteratorListaCanais : Interator
     {
-        private List<Canal> canais;
+        private readonly List<Canal> canais;
         protected int contador;
 
         public InteratorListaCanais(List<Canal> canais)

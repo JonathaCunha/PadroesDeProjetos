@@ -10,7 +10,7 @@ namespace Comportamental.Memento
     /// </summary>
     public class ClientMain
     {
-        public /*static*/ void Main(string[] agrs)
+        public static void Main(string[] agrs)
         {
             var editor = new EditorDeTexto();
             editor.Escreve("Jonatha da cunha ");

@@ -2,7 +2,7 @@
 {
     internal class InteratorArrayCanais : Interator
     {
-        private Canal[] canais;
+        private readonly Canal[] canais;
         private int contador;
 
         public InteratorArrayCanais(Canal[] canais)

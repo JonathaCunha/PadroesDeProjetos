@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estrutural", "Estrutural\Es
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comportamental", "Comportamental\Comportamental.csproj", "{43411010-DEB1-4F29-93EB-828C892379E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outros", "Outros\Outros.csproj", "{E1324FD2-846A-4301-A5D4-6E144DB88B67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Outros", "Outros\Outros.csproj", "{E1324FD2-846A-4301-A5D4-6E144DB88B67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2C3BB4DD-2E73-4890-BA28-75EFC4A75B24}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

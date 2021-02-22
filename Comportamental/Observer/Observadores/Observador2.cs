@@ -6,7 +6,8 @@ namespace Comportamental.Observer
 {
     public class Observador2 : ObservadorAbstrato
     {
-        public Observador2(Observada observada) : base(observada)
+        public Observador2(Observada observada) 
+            : base(observada)
         {
         }
         public override void Notifique()

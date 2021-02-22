@@ -14,7 +14,7 @@ namespace Comportamental.Chain_of_Responsibility
     {
         public /*static*/ void Main(string[] agrs)
         {
-            var pedido = new Pedido(10,5);
+            var pedido = new Pedido(valor:10,quantidadesItens:5);
 
             var descontoValor = new DescontoPorValor();
             var descontoQuantidade = new DescontoPorQuantidade();

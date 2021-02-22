@@ -28,7 +28,7 @@ namespace Comportamental.Command
         {
             return Nome.Substring(1)
                             + DateTime.Now.Ticks
-                            + mensagem.Length;
+                            + "L" + mensagem.Length;
         }
         public void ExcluarMensagem(string idMensagem)
         {

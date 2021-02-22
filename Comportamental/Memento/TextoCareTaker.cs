@@ -6,24 +6,24 @@ namespace Comportamental.Memento
 {
     public class TextoCareTaker
     {
-        protected List<TextoMemento> estados;
+        protected List<string> estados;
 
         public TextoCareTaker()
         {
-            estados = new List<TextoMemento>();
+            estados = new List<string>();
         }
 
-        public void AdicionarMomento(TextoMemento textMemento)
+        public void AdicionarMomento(string textMemento)
         {
             estados.Add(textMemento);
         }
 
-        public TextoMemento ObtenhaUltimoEstado()
+        public string ObtenhaUltimoEstado()
         {
             if (estados.Count <= 0)
-                return new TextoMemento("");
+                return string.Empty;
 
-            TextoMemento estadoSalvo = estados[estados.Count - 1];
+            string estadoSalvo = estados[estados.Count - 1];
             estados.RemoveAt(estados.Count - 1);
             return estadoSalvo;
         }
