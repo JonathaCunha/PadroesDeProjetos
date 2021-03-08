@@ -10,12 +10,12 @@ namespace Criacao.Abstract_Factory
 {
     public class ClienteMan
     {
-        public /*static*/ void Main(string[] args)
+        public static void Main(string[] args)
         {
-            var cliente = new Cliente(new FabricaWindows());
+            var cliente = new FabricaXamarim(new FabricaWindows());
             cliente.Desenhe();
 
-            var clienteLinux = new Cliente(new FabricaLinux());
+            var clienteLinux = new FabricaXamarim(new FabricaLinux());
             clienteLinux.Desenhe();
             Console.Read();
         }

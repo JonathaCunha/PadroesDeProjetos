@@ -18,13 +18,13 @@ namespace Criacao.Builder
 
         public BuilderGuerreiroFluent AdicionarEscudoMagico()
         {
-            Guerreiro.AdicionarEscudo("Escudo Futuro");
+            Guerreiro.AdicionarEscudo("Escudo Espelho Futuro");
             return this;
         }
 
         public override BuilderGuerreiroFluent AdicionarEspada()
         {
-            Guerreiro.AdicionarEspada("Espada Futuro");
+            Guerreiro.AdicionarEspada("Espada lazer Futuro");
             return this;
         }
 

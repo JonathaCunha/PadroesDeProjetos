@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Criacao.Abstract_Factory
 {
-    public class Cliente
+    public class FabricaXamarim
     {
-        public Cliente(FabricaAbstrata fabrica)
+        public FabricaXamarim(FabricaAbstrata fabrica)
         {
             Janela = fabrica.CrieJanela();
             Botao = fabrica.CrieBotao();

@@ -6,13 +6,13 @@ namespace Criacao.Factory_Method
 {
     public class FabricaCarroFiat : FabricaAbstract
     {
-        int carroPotente = 4;
+        int carroPotente = 2;
         protected override ProdutoCarro CrieNovoCarro()
         {
-            if(carroPotente == 0)
-                return new ProdutoConcretoPalio();
+            if(carroPotente++ < 2)
+                return new ProdutoConcretoStrada();
 
-            return new ProdutoConcretoStrada();
+            return new ProdutoConcretoPalio();
         }
         
     }

@@ -11,7 +11,7 @@ namespace Estrutural.Composite
 {
     class ClientMain
     {
-        public /*static*/ void Main(string[] args)
+        public static void Main(string[] args)
         {
             var elementoRaiz = new ElementoComposto("Raiz");
             elementoRaiz.AdicionarElemento(new Folha("Folha 1"));
