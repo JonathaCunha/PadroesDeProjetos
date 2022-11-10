@@ -1,4 +1,4 @@
-﻿# Estudo Padroes de Projetos
+﻿# Estudo Padrões de Projetos
 
 Software criado para fins de estudo e teste dos padrões de projetos existentes
 
